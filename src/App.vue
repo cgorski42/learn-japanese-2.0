@@ -35,7 +35,7 @@
     }
 
     nav ul {
-        background-image: url("./images/scroll-mid.png");
+        background-image: url("/static/images/scroll-mid.png");
         background-position: center bottom;
         list-style-type: none;
         margin: 0;
@@ -91,7 +91,7 @@
 
 
     body{
-        background: url("./images/cherry-blossoms.jpg");
+        background: url("/static/images/cherry-blossoms.jpg");
         /*background-size: cover;*/
         background-position: top left;
         background-repeat: no-repeat;
