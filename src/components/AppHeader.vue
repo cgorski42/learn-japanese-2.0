@@ -19,7 +19,7 @@
         <div class="flexWrapper errorPlace">
             <p v-if="loginError" class="flexRight error">{{loginError}}</p>
         </div>
-        <img src="images/scroll-bottom.png">
+        <img src="/static/images/scroll-bottom.png">
     </nav>
 </template>
 
@@ -81,7 +81,7 @@
     }
 
     nav ul {
-        background-image: url("./images/scroll-mid.png");
+        background-image: url("/static/images/scroll-mid.png");
         background-position: center bottom;
         list-style-type: none;
         margin: 0;
