@@ -1,6 +1,5 @@
 <template>
   <div class="column">
-    <img src="/static/images/red-bird.png"/>
     <h1>Japanese Study Tools</h1>
     <h2>Learn Japanese Today!</h2>
     <form v-on:submit.prevent="register">
