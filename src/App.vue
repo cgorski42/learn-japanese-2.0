@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <app-header/>
-    <router-view/>
+    <section>
+        <aside><app-header/></aside>
+        <article><router-view/></article>
+    </section>
   </div>
 </template>
 
@@ -27,24 +29,6 @@
         display: block
     }
 
-    nav {
-        display: inline-grid;
-    }
-    nav il a:link{
-        color: #30332C;
-    }
-
-    nav ul {
-        background-image: url("/static/images/scroll-mid.png");
-        background-position: center bottom;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        width: 100%;
-        font-family: 'Alegreya', serif;
-    }
-
     /* unvisited link */
     a:link {
         color: #ED5C68;
@@ -54,41 +38,6 @@
     a:visited {
         color: #69A561;
     }
-
-
-    nav img{
-        padding: 0;
-    }
-
-    nav li {
-        width: 100%;
-        text-align:center;
-    }
-
-    nav li a {
-        font-family: 'Merienda', cursive;
-        font-weight: bold;
-        width: 130px;
-        display: inline-block;
-        color: #30332C;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 18px; 
-    }
-
-    nav li a:link {
-        color: #30332C;
-    }
-
-    nav li a:visited {
-        color: #30332C;
-    }
-
-    nav li a:hover {
-        background-color: #ED5C68;
-    }
-
 
     body{
         background: url("/static/images/cherry-blossoms.jpg");
