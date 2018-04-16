@@ -14,67 +14,200 @@
 </script>
 
 <style>
+    jap{
+        font-family: 'hakusyukaisyoextrabold_kkRg';
+    }
 
-/* https://color.adobe.com/CS04-color-theme-1994456/?showPublished=true */
- body {
-     font-size: 18px;
-     padding: 20px 100px 0px 100px;
-     font-family: 'Avenir', Helvetica, Arial, sans-serif;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
- }
- button {
-     color: #fff;
-     min-width: 100px;
-     line-height: 1em;
-     border: none;
-     border-radius: 5px;
-     color: white;
-     padding: 5px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 1rem;
-     margin: 4px 2px;
- }
- button.primary {
-     background-color: #F35537;
- }
- button.alternate {
-     background-color: #77C4D3;
- }
- button:focus {
-     outline: none;
- }
- button:hover {
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- }
- button:active {
-     transform: translateY(4px);
- }
- input {
-     height: 20px;
-     padding: 10px;
- }
- a {
-     color: #77C4D3;
- }
- .flexWrapper {
-     display:flex;
- }
- .flexRight {
-     margin-left: auto;
- }
- .error {
-     color: #F35537;
- }
- .column {
-     width: 800px;
- }
- .feed {
-     width: 600px;
- }
- .feed img {
-     width: 100%;
- }
+    h1{
+        font-size: 40px;
+        font-family: 'Merienda', cursive;
+    }
+
+    li {
+        display: block
+    }
+
+    nav {
+        display: inline-grid;
+    }
+    nav il a:link{
+        color: #30332C;
+    }
+
+    nav ul {
+        background-image: url("./images/scroll-mid.png");
+        background-position: center bottom;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        font-family: 'Alegreya', serif;
+    }
+
+    /* unvisited link */
+    a:link {
+        color: #ED5C68;
+    }
+
+    /* visited link */
+    a:visited {
+        color: #69A561;
+    }
+
+
+    nav img{
+        padding: 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align:center;
+    }
+
+    nav li a {
+        font-family: 'Merienda', cursive;
+        font-weight: bold;
+        width: 130px;
+        display: inline-block;
+        color: #30332C;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px; 
+    }
+
+    nav li a:link {
+        color: #30332C;
+    }
+
+    nav li a:visited {
+        color: #30332C;
+    }
+
+    nav li a:hover {
+        background-color: #ED5C68;
+    }
+
+
+    body{
+        background: url("./images/cherry-blossoms.jpg");
+        /*background-size: cover;*/
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-color:#ffffff;
+        font-family: 'Alegreya', serif;
+        color: white;
+        font-size: 15px; 
+    }
+    section {
+     display: flex;
+    }
+
+    aside {
+        flex: .75;
+    }
+
+    article {
+        flex: 4.25;
+        padding: 20px;
+        background: rgba(66, 48, 40, .90);
+        border-radius:10px;
+        margin:10px;
+        margin-top:19px;
+        margin-left:19px;
+    }
+
+    form{
+      text-align:center;  
+      background-color:white;
+      border-radius:10px;
+    }
+
+    form ul{
+        -webkit-padding-start: 0px;
+    }
+
+    form h1{
+        color:rgba(66, 48, 40, .90);
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    form li {
+        display: block;
+        padding: 5px;
+    }
+
+    form input{
+        width: 95%;
+    }
+    form textarea{
+        width: 95%;
+    }
+
+    form button{
+        width: 95%;
+        background: #ED5C68;
+        border:none;
+        border-width:0px;
+        color: white;
+        padding:8px;
+        margin-bottom:20px;
+    }
+
+    footer{
+        /*background-color: #EA8567;*/
+        padding: 30px;
+        text-align: center;
+        color: black;
+    }
+
+    footer img{
+        width:10%;
+        background:white;
+        border-radius:15px;
+        padding:10px;
+    }
+    footer img:hover {
+        background:#ED5C68;
+    }
+
+    div#quiz th{
+        font-size: 40px;
+        font-family: 'Merienda', cursive;
+        width:25%;
+    }
+
+    div#quiz table {
+        width:100%;
+        height:100%;
+    }
+
+    div#quiz button{
+        width:100%;
+        height:250px;
+        font-size:40px;
+        font-weight:bold;
+        border:none;
+        border-width:0px;
+        background:#FFFFFF;
+    }
+
+    div#quiz button:hover{
+        background: rgba(255, 215, 201, 1);
+    }
+
+
+    div#quiz h1 {
+        text-align:center;
+    }
+
+    div#quiz tr {
+        text-align:center;
+    }
+
+    div#quiz td {
+        font-size: 20px;
+    }
 </style>
