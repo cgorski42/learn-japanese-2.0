@@ -1,0 +1,3 @@
+export jwtSecret="21689237583884"
+
+source .env
