@@ -1,4 +1,6 @@
 <template>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">  
   <div id="app">
     <section>
         <aside><app-header/></aside>

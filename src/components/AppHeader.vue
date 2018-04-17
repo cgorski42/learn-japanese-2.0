@@ -125,12 +125,10 @@
     }
     
     form{
-        margin-left: 36px;
-        margin-right: 36px;
-        text-align: center;
         background-color: white;
-        border-radius: 10px;
-        padding: 5px;
+        width: 175px;
+        padding: 10px 5px;
+        margin-left: 21px;
     }
 
     form ul{
@@ -149,7 +147,7 @@
     }
 
     form input{
-        width: 95%;
+        width: 92%;
     }
     form textarea{
         width: 95%;
@@ -162,6 +160,5 @@
         border-width:0px;
         color: white;
         padding:8px;
-        margin-bottom:20px;
     }
 </style>
