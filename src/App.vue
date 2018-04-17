@@ -67,44 +67,6 @@
         margin-left:19px;
     }
 
-    form{
-      text-align:center;  
-      background-color:white;
-      border-radius:10px;
-    }
-
-    form ul{
-        -webkit-padding-start: 0px;
-    }
-
-    form h1{
-        color:rgba(66, 48, 40, .90);
-        margin-top:20px;
-        margin-bottom:20px;
-    }
-
-    form li {
-        display: block;
-        padding: 5px;
-    }
-
-    form input{
-        width: 95%;
-    }
-    form textarea{
-        width: 95%;
-    }
-
-    form button{
-        width: 95%;
-        background: #ED5C68;
-        border:none;
-        border-width:0px;
-        color: white;
-        padding:8px;
-        margin-bottom:20px;
-    }
-
     footer{
         /*background-color: #EA8567;*/
         padding: 30px;

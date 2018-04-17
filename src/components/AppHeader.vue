@@ -2,8 +2,6 @@
     <nav>
         <img src="/static/images/scroll-top.png">
         <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/">Study</router-link></li>
             <li class="right" v-if="loggedIn">
                 <router-link :to="{ name: 'UserPage', params: {userID: user.id}}">{{user.username}}</router-link> 
                 <a @click="logout" href="#">Logout</a></p>
@@ -14,11 +12,13 @@
                   <input v-model="password" type="password" placeholder="Password">
                   <button class="primary" type="submit">Login</button>
                 </form>
+                <div class="flexWrapper errorPlace">
+                    <p v-if="loginError" class="flexRight error">{{loginError}}</p>
+                </div>
             </li>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/">Study</router-link></li>
         </ul>
-        <div class="flexWrapper errorPlace">
-            <p v-if="loginError" class="flexRight error">{{loginError}}</p>
-        </div>
         <img src="/static/images/scroll-bottom.png">
     </nav>
 </template>
@@ -122,5 +122,46 @@
 
     nav li a:hover {
         background-color: #ED5C68;
+    }
+    
+    form{
+        margin-left: 36px;
+        margin-right: 36px;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    form ul{
+        -webkit-padding-start: 0px;
+    }
+
+    form h1{
+        color:rgba(66, 48, 40, .90);
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    form li {
+        display: block;
+        padding: 5px;
+    }
+
+    form input{
+        width: 95%;
+    }
+    form textarea{
+        width: 95%;
+    }
+
+    form button{
+        width: 95%;
+        background: #ED5C68;
+        border:none;
+        border-width:0px;
+        color: white;
+        padding:8px;
+        margin-bottom:20px;
     }
 </style>
