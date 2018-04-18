@@ -15,7 +15,6 @@ export default new Vuex.Store({
     token: '',
     loginError: '',
     registerError: '',
-
     userView: [],
     question:"n/a",
     answer: 0,
@@ -68,6 +67,9 @@ export default new Vuex.Store({
     setOptColors (state, colors) {
       state.optColors = colors;
     },
+      setAnswer (state, answer) {
+	  state.answer = answer;
+      },
   },
   actions: {
     // Initialize //
@@ -146,12 +148,18 @@ export default new Vuex.Store({
       });
     },
     
-    checkAnswer(context, user) {
+      checkAnswer(context, user, answer) {
         // TODO implement this
-        var question_num = 0;
+	if(this.answer === answer)
+	  {
+	      setTimeout(this.nextQuestion, 350)
+	  }
+    }, 
+    nextQuestion(context, user) {
+       var question_num = 0;
         var newOptions = ["n/a","n/a","n/a","n/a"];
-
-        for(var i = 0;i < options.count();i++)
+       var newAns = Math.floor(Math.random() * newOptions.length)
+        for(var i = 0;i < newOptions.length;i++)
         {
             var cont = true;
             while(cont)
@@ -171,31 +179,7 @@ export default new Vuex.Store({
         }
 
         context.commit('setOptions',newOptions);
-    }, 
-    nextQuestion(context, user) {
-       var question_num = 0;
-       var newOptions = ["n/a","n/a","n/a","n/a"];
-       
-       for(i=0;i < options.count();i++)
-       {
-            var cont = true;
-            while(cont)
-            {
-                question_num = Math.floor(Math.random()*64);
-                cont = false;
-                for (j = 0; j < i; j++)
-                {
-                    if (newOptions[j] === question_num) 
-                    {
-                        cont = true;
-                        break;
-                    }
-                }
-            }
-            newOptions[i] = question_num;
-       }
-       
-       context.commit('setOptions',newOptions);
+	context.commit('setAnswer',newAns);
     },
   }
 });
