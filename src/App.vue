@@ -1,8 +1,5 @@
 <template>
- 
   <div id="app">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet"> 
     <section>
         <aside><app-header/></aside>
         <article><router-view/></article>
