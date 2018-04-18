@@ -43,12 +43,6 @@
      loginError: function() {
        return this.$store.getters.loginError;
      },
-     numberFollowing: function() {
-       return this.$store.getters.following.length;
-     },
-     numberFollowers: function() {
-       return this.$store.getters.followers.length;
-     }
    },
    methods: {
      search: function() {
