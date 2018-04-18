@@ -1,14 +1,12 @@
 <template>
 <div>
     <table>
-    <!--tr style="height:50px">
-        <th colspan="2">Score: {{score}} / {{attempts}}</th>
-    </tr-->
     <tr>
         <th v-cloak>{{question}}</th>
         <td>
             <table>
             <tr>
+                <td><button v-on:click="checkAnswer(0)" v-cloak> {{options[0]}} </button></td>
                 <td><button v-on:click="checkAnswer(0)" v-cloak> {{options[0]}} </button></td>
                 <td><button v-on:click="checkAnswer(1)" v-cloak> {{options[1]}} </button></td>
             </tr>

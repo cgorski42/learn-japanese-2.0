@@ -148,6 +148,54 @@ export default new Vuex.Store({
     
     checkAnswer(context, user) {
         // TODO implement this
-    },    
+        var question_num = 0;
+        var newOptions = ["n/a","n/a","n/a","n/a"];
+
+        for(i=0;i < options.count();i++)
+        {
+            var cont = true;
+            while(cont)
+            {
+                question_num = Math.floor(Math.random()*64);
+                cont = false;
+                for (j = 0; j < i; j++)
+                {
+                    if (newOptions[j] === question_num) 
+                    {
+                        cont = true;
+                        break;
+                    }
+                }
+            }
+            newOptions[i] = question_num;
+        }
+
+        context.commit('setOptions',newOptions);
+    }, 
+    nextQuestion(context, user) {
+       var question_num = 0;
+       var newOptions = ["n/a","n/a","n/a","n/a"];
+       
+       for(i=0;i < options.count();i++)
+       {
+            var cont = true;
+            while(cont)
+            {
+                question_num = Math.floor(Math.random()*64);
+                cont = false;
+                for (j = 0; j < i; j++)
+                {
+                    if (newOptions[j] === question_num) 
+                    {
+                        cont = true;
+                        break;
+                    }
+                }
+            }
+            newOptions[i] = question_num;
+       }
+       
+       context.commit('setOptions',newOptions);
+    },
   }
 });
