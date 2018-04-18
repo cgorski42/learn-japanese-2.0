@@ -16,6 +16,7 @@ export default new Vuex.Store({
     loginError: '',
     registerError: '',
 
+    userView: [],
     question:"n/a",
     answer: 0,
     
@@ -24,6 +25,7 @@ export default new Vuex.Store({
   },
   getters: {
     user: state => state.user,
+    userView: state=> state.userView,
     getToken: state => state.token,
     loggedIn: state => {
       if (state.token === '')
@@ -53,6 +55,9 @@ export default new Vuex.Store({
     },
     setRegisterError (state, message) {
       state.registerError = message;
+    },
+    setUserView (state, user) {
+      state.userView = user;
     },
     setQuestion (state, question) {
       state.question = question;

@@ -1,9 +1,10 @@
 <template>
 <div>
-<table>
+    <p>>{{question}}</p>
+    <!--table>
     <!--tr style="height:50px">
         <th colspan="2">Score: {{score}} / {{attempts}}</th>
-    </tr-->
+    </tr>
     <tr>
         <th v-cloak>{{question}}</th>
         <td>
@@ -19,7 +20,7 @@
             </table>
         </td>
     </tr>
-    </table>
+    </table-->
 </div>
 </template>
 
