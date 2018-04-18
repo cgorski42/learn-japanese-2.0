@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="loggedIn">
-      <user-feed/>
+      <options/>
     </div>
     <div v-else>
       <welcome-page/>
@@ -11,10 +11,10 @@
 
 <script>
  import WelcomePage from './WelcomePage';
- import UserFeed from './UserFeed';
+ import Options from './Options';
  export default {
    name: 'HomePage',
-   components: {WelcomePage,UserFeed},
+   components: {WelcomePage,Options},
    computed: {
      loggedIn: function() {
        return this.$store.getters.loggedIn;
