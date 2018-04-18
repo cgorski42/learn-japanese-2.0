@@ -21,7 +21,7 @@ export default new Vuex.Store({
     answer: 0,
     
     options: ["n/a","n/a","n/a","n/a"],
-    opt_colors: ["#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"],
+    optColors: ["#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"],
   },
   getters: {
     user: state => state.user,
@@ -37,7 +37,7 @@ export default new Vuex.Store({
    
     question: state => state.question,
     options: state=>state.options,
-    opt_colors: state=>opt_colors,
+    optColors: state=>optColors,
   },
   mutations: {
     setUser (state, user) {
@@ -59,14 +59,14 @@ export default new Vuex.Store({
     setUserView (state, user) {
       state.userView = user;
     },
-    setQuestion (state, question) {
-      state.question = question;
+    setQuestion (state, q) {
+      state.question = q;
     },
-    setOptions (state, options) {
-      state.options = options;
+    setOptions (state, o) {
+      state.options = o;
     },
-    setOptColors (state, opt_colors) {
-      state.opt_colors = opt_colors;
+    setOptColors (state, colors) {
+      state.optColors = colors;
     },
   },
   actions: {

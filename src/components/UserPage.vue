@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2> {{userView.name}}({{userView.username}}) </h2>
+    <h2> {{userView.name}} ({{userView.username}}) </h2>
+    <p>Score: (Insert user score here...)</p>
   </div>
 </template>
 

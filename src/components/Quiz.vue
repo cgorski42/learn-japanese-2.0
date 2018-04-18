@@ -1,26 +1,25 @@
 <template>
 <div>
-    <p>>{{question}}</p>
-    <!--table>
+    <table>
     <!--tr style="height:50px">
         <th colspan="2">Score: {{score}} / {{attempts}}</th>
-    </tr>
+    </tr-->
     <tr>
         <th v-cloak>{{question}}</th>
         <td>
             <table>
             <tr>
-                <td><button v-on:click="checkAnswer(0)" v-bind:style="{background: opt_colors[0]}" v-cloak> {{options[0]}} </button></td>
-                <td><button v-on:click="checkAnswer(1)" v-bind:style="{background: opt_colors[1]}" v-cloak> {{options[1]}} </button></td>
+                <td><button v-on:click="checkAnswer(0)" v-bind:style="{background: optColors[0]}" v-cloak> {{options[0]}} </button></td>
+                <td><button v-on:click="checkAnswer(1)" v-bind:style="{background: optColors[1]}" v-cloak> {{options[1]}} </button></td>
             </tr>
             <tr> 
-                <td><button v-on:click="checkAnswer(2)" v-bind:style="{background: opt_colors[2]}" v-cloak> {{options[2]}} </button></td>
-                <td><button v-on:click="checkAnswer(3)" v-bind:style="{background: opt_colors[3]}" v-cloak> {{options[3]}} </button></td>
+                <td><button v-on:click="checkAnswer(2)" v-bind:style="{background: optColors[2]}" v-cloak> {{options[2]}} </button></td>
+                <td><button v-on:click="checkAnswer(3)" v-bind:style="{background: optColors[3]}" v-cloak> {{options[3]}} </button></td>
             </tr>
             </table>
         </td>
     </tr>
-    </table-->
+    </table>
 </div>
 </template>
 
@@ -40,8 +39,8 @@ export default {
     options: function() {
        return this.$store.getters.options;
     },
-    opt_colors: function() {
-       return this.$store.getters.opt_colors;
+    optColors: function() {
+       return this.$store.getters.optColors;
     },
   },
   methods: {
