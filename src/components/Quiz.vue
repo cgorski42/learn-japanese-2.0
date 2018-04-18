@@ -12,7 +12,7 @@
                 <td><button v-on:click="checkAnswer(0)" v-bind:style="{background: opt_colors[0]}" v-cloak> {{options[0]}} </button></td>
                 <td><button v-on:click="checkAnswer(1)" v-bind:style="{background: opt_colors[1]}" v-cloak> {{options[1]}} </button></td>
             </tr>
-            <tr>
+            <tr> 
                 <td><button v-on:click="checkAnswer(2)" v-bind:style="{background: opt_colors[2]}" v-cloak> {{options[2]}} </button></td>
                 <td><button v-on:click="checkAnswer(3)" v-bind:style="{background: opt_colors[3]}" v-cloak> {{options[3]}} </button></td>
             </tr>
@@ -30,8 +30,8 @@
       ROMAJI: 2,
     };
 
-    var quiz = new Vue({
-      el: '#quiz',
+    export default {
+      name: 'Quiz',
       data: {
         character: '',
         progress: '',
