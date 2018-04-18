@@ -83,42 +83,4 @@
     footer img:hover {
         background:#ED5C68;
     }
-
-    div#quiz th{
-        font-size: 40px;
-        font-family: 'Merienda', cursive;
-        width:25%;
-    }
-
-    div#quiz table {
-        width:100%;
-        height:100%;
-    }
-
-    div#quiz button{
-        width:100%;
-        height:250px;
-        font-size:40px;
-        font-weight:bold;
-        border:none;
-        border-width:0px;
-        background:#FFFFFF;
-    }
-
-    div#quiz button:hover{
-        background: rgba(255, 215, 201, 1);
-    }
-
-
-    div#quiz h1 {
-        text-align:center;
-    }
-
-    div#quiz tr {
-        text-align:center;
-    }
-
-    div#quiz td {
-        font-size: 20px;
-    }
 </style>
