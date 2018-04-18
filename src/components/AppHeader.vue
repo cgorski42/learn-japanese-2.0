@@ -17,7 +17,7 @@
                 </div>
             </li>
             <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/">Study</router-link></li>
+            <li><router-link to="/quiz">Study</router-link></li>
         </ul>
         <img src="/static/images/scroll-bottom.png">
     </nav>

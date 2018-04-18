@@ -43,11 +43,11 @@ export default {
     opt_colors: function() {
        return this.$store.getters.opt_colors;
     },
-  }
+  },
   methods: {
     checkAnswer: function(answer) {
        this.$store.dispatch('checkAnswer',{answer:answer});
     },
-  }
+  },
 }
 </script>
